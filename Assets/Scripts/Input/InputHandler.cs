@@ -11,6 +11,8 @@ namespace Eurovision.Input
         [SerializeField] private Button[] _buttons;
         [SerializeField] private bool _superOn = false; // We may want to move this somewhere else
         private ScoreBar[] _scoreBars;
+        
+        public int ButtonAmount { get { return _buttons.Length; } }
 
         private void Awake()
         {
