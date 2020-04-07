@@ -143,7 +143,7 @@ public class ScoreBar : MonoBehaviour
 
     IEnumerator Lerp()
     {
-        while (_progressbar.fillAmount < percentage-0.01f)
+        while (_progressbar.fillAmount < percentage-0.01f || _progressbar.fillAmount > percentage+0.01f)
         {
             SetParamaters(Mathf.Lerp(_progressbar.fillAmount, percentage, 0.05f));
             yield return new WaitForEndOfFrame();
