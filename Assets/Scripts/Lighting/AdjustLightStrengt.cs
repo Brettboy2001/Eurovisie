@@ -33,9 +33,9 @@ public class AdjustLightStrengt : MonoBehaviour
     //===================================================================================================== Change Value
     public void ChangeLightValue(float strenght)
     {
-        
-        float _strenght;
-        _strenght = (strenght / middleGround) + 1;
+        float _strenght = (strenght / middleGround) + 1;
+        if (_strenght > (2.5f))
+        { _strenght = 2.5f;}
         for (int i = 0; i < lights.Length; i++)
         {
             lights[i].intensity = _strenght * _lightBaseStrenght[i];

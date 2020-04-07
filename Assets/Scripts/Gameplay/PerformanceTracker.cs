@@ -37,7 +37,7 @@ namespace Eurovision.Gameplay
             UpdateUI();
         }
 
-        private void ResetPerformancePoints()
+        public void ResetPerformancePoints()
         {
             _performancePoints = 0;
         }
