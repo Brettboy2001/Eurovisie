@@ -60,6 +60,16 @@ public class ScoreBar : MonoBehaviour
         }
     }
 
+    public void CanvasOff()
+    {
+        this.gameObject.SetActive(false);
+    }
+    
+    public void CanvasOnn()
+    {
+        this.gameObject.SetActive(true);
+    }
+    
     public bool Isactive()
     {
         return _ultimate;
