@@ -23,7 +23,7 @@ namespace Eurovision.Gameplay
             LookObject[] randomTarget = new LookObject[1];
             randomTarget[0] = _targets[randomIndex];
             NewTarget.Invoke(randomTarget[0].gameObject);
-            return new Task(randomTarget, randomDuration, false);
+            return new Task(randomTarget, randomDuration, false,1);
         }
         
         public Task GenerateSongSelectionTask()
